@@ -16,6 +16,7 @@ spec:
       labels:
         app: rocketchat-db
     spec:
+      serviceAccountName: rocketchat-db
       containers:
         - name: rocketchat-db
           image: docker.io/mongo:4.0
